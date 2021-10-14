@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --main-color: rgb(16, 112, 255);
+}
+
+* {
+    margin: 0;
+    background-color: #eef0f7;
+    /* box-sizing: border-box; */
+}
+
+.component-box { display: flex; }
+
+.primeira-coluna {
+    margin-top: 10em;
+    margin-left: 10em;
+    margin-right: 0;
+    max-width: 610px;
+}
+
+.primeira-coluna img { min-width: 300px; max-width: 301px;}
+
+.primeira-coluna h2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    margin: 0;
+    max-width: 500px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.segunda-coluna {
+    margin-left: 5em;
+}
+
+.input-form {
+    text-align: center;
+    margin-top: 7.5em;
+    margin-right: 2em;
+}
+
+.user-login-registration {
+    float: right;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgb(208, 208, 208);
+}
+
+.user-login-registration a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pssw-frgt {
+    color: var(--main-color);
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.pssw-frgt:hover {
+    text-decoration: underline;
+}
+
+.grey-bar {
+    width: 350px;
+    height: 1px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+    background: rgb(204, 204, 204);
+}
+
+.acct-crt {
+    background-color: #4fa229;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.acct-crt:hover { background-color: #438723;}
+
+.user-login-registration input {
+    display: block;
+    margin-top: 0;
+    height: 15px;
+    width: 355px;
+    border: 1px solid rgb(216, 216, 216);
+    background: transparent;
+    color: rgb(150, 149, 149);
+    font-size: 17px;
+    padding: 1em;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.user-login-registration input:focus {
+    border: 1px solid var(--main-color);
+    box-shadow: 2px var(--main-color);
+}
+
+.pw-dv {
+    margin-top: 1em;
+    background: transparent;
+}
+
+.user-login-registration button {
+    width: 390px;
+    height: 50px;
+    background-color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    border-color: transparent;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.user-login-registration button:hover { background-color: rgb(14, 92, 208); }
+
+.clbrd-create {
+    float: right;
+    margin-right: 4em;
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+}
+
+.clbrd-create p{ color: rgb(29, 29, 29);
+    display: block;
+    margin-top: 2.5em;
+    font-size: 13px;
+}
+
+.clbrd-create a{
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.clbrd-create a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 5em;
+    background-color: white;
+    bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer li a{
+    margin: 1em;
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px){
+
+    .component-box {
+        display: block;
+    }
+
+    .primeira-coluna {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 63%;
+    }
+
+    .primeira-coluna h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
